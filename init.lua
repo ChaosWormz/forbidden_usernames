@@ -1,6 +1,8 @@
 local disallowed = {
 	["guest"]				=	"Guest accounts are disallowed on this server.  "..
 								"Please choose a proper username and try again.",
+	["squeakecraft"]		=	"Sorry, SqueakeCraft temporary usernames are not allowed here."..
+								"Please use the official, free Minetest client and choose a proper username.",
 	["[4a]dm[1il]n"]		=	"That is a clearly false, misleading, or otherwise disallowed username. "..
 								"Please choose a unique username and try again.",
 	["^[0-9]+$"]			=	"All-numeric usernames are disallowed on this server. "..
