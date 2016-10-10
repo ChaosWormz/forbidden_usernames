@@ -56,7 +56,7 @@ end
 minetest.register_on_prejoinplayer(function(name, ip)
 	local lname = name:lower()
 	for re, reason in pairs(disallowed) do
-		if lname:find(re) then
+		if lname:find(re) and not minetest.auth_table[name] then
 			return reason
 		end
 	end
