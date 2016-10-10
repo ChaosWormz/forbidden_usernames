@@ -1,14 +1,16 @@
 local disallowed = {
-	["guest"]				=	"Guest accounts are disallowed on this server.  "..
-								"Please choose a proper username and try again.",
-	["squeakecraft"]		=	"Sorry, SqueakeCraft temporary usernames are not allowed here."..
-								"Please use the official, free Minetest client and choose a proper username.",
+	["^guest"]			=	"Temporary 'GuestXXXX' usernames are disallowed on this server.  "..
+						"Please choose a proper username and try again.",
+	["^player"]			=	"Temporary 'PlayerXXXX' usernames are disallowed on this server.  "..
+						"Please choose a proper username and try again.",
+	["^squeakecraft"]		=	"Temporary 'Squeakecraft' usernames are disallowed on this server.  "..
+						"Please choose a proper username and try again.",
 	["[4a]dm[1il]n"]		=	"That is a clearly false, misleading, or otherwise disallowed username. "..
-								"Please choose a unique username and try again.",
+						"Please choose a unique username and try again.",
 	["^[0-9]+$"]			=	"All-numeric usernames are disallowed on this server. "..
-								"Please choose a proper username and try again.",
-	["[0-9].-[0-9].-[0-9].-[0-9].-[0-9]"]	=	"Too many numbers in your username. "..
-												"Please try again with less than five digits in your username."
+						"Please choose a proper username and try again.",
+	["[0-9].-[0-9].-[0-9]"] 	=	"Too many numbers in your username. "..
+						"Please try again with less than three digits in your username."
 }
 
 -- Original implementation (in Python) by sfan5
